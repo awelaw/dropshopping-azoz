@@ -7,7 +7,17 @@
     </head>
     <body style="padding: 0;
     margin: 0;">
-        <div>
+        <div style="@media screen and (max-width: 768px) {
+    .product {
+        width: calc((100% / 2) - 30px); /* Adjust for 2 products per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product {
+        width: 100%; /* Full width for single product per row */
+    }
+}">
 
             <header class="header">
                 <div class="left">
